@@ -1,18 +1,198 @@
-<form
-  action="https://formspree.io/f/https://formspree.io/f/xyeevkkl
-  method="POST"
->
-  <label>姓名</label>
-  <input type="text" name="name" required>
 
-  <label>電話</label>
-  <input type="tel" name="phone" required>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們｜白序生活設計</title>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <label>聯絡內容</label>
-  <textarea name="message" required></textarea>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background: #f7f5f0;
+      color: #444;
+      line-height: 1.8;
+    }
 
-  <button type="submit">送出表單</button>
-</form>
+    header {
+      background: #ffffff;
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 1px solid #e8e3da;
+    }
+
+    header h1 {
+      color: #827763;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: #777;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    nav a:hover {
+      color: #a18c6c;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 55px auto;
+      padding: 35px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #827763;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd5c9;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #a18c6c;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      background: #a18c6c;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #827763;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 25px 15px;
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>白序生活設計</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>聯絡我們</h2>
+
+    <p class="intro">
+      感謝您對白序生活設計的支持，
+      歡迎填寫以下表單與我們聯繫。
+    </p>
+
+    <form
+      action="https://formspree.io/f/xyeevkkl"
+      method="POST"
+    >
+
+      <input type="hidden" name="_subject"
+             value="白序生活設計－網站聯絡表單">
+
+      <label for="name">姓名 *</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="請輸入您的姓名"
+        required
+      >
+
+      <label for="phone">電話</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="請輸入您的電話"
+      >
+
+      <label for="email">Email *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="請輸入您的 Email"
+        required
+      >
+
+      <label for="message">聯絡內容 *</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="請輸入您想詢問的內容"
+        required
+      ></textarea>
+
+      <button type="submit">送出訊息</button>
+
+    </form>
+  </main>
+
+  <footer>
+    © 2026 白序生活設計 All Rights Reserved.
+  </footer>
+
+</body>
+</html>
